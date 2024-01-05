@@ -11,6 +11,14 @@ import {
   LoginLogoutComp,
   ThirdToggle,
 } from "./citcut-conditional-challenge/exc1";
+import Component_1 from "./render-re-render-mount-unmount/exc1";
+import Header from "./project-structure/header";
+import NavBar from "./project-structure/nav-bar";
+import CommonFooter from "./project-structure/footer/common-footer";
+import Home from "./project-structure/pages/home";
+import About from "./project-structure/pages/about";
+import ListingPersons from "./listing-displaying-list/list-person";
+import LoginForm from "./form-control/login-form";
 
 function App() {
   return (
@@ -23,7 +31,17 @@ function App() {
       {/* <FetchConditionalRendering /> */}
       {/* <DisplayUser /> */}
       {/* <LoginLogoutComp /> */}
-      <ThirdToggle />
+      {/* <ThirdToggle /> */}
+      {/* <Component_1 /> */}
+      {/* <NavBar />
+      <Header />
+      <CommonFooter /> */}
+
+      {/* <Home />
+      <About /> */}
+
+      {/* <ListingPersons /> */}
+      <LoginForm />
     </>
   );
 }

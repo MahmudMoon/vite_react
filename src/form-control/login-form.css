@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 30px;
+  background-color: lightgray;
+  justify-content: space-evenly;
+}
+
+.inputs {
+  width: 300px;
+  padding: 5px 10px;
+  background-color: white;
+}
+
+#login-btn {
+  margin-top: 20px;
+  font-weight: bold;
+  letter-spacing: 0.2cap;
+  word-spacing: 0.2cap;
+  background-color: white;
+  width: 300px;
+}
