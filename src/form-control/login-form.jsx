@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./login-form.css";
-import { data } from "../assets/data";
+import { data, genders } from "../assets/data";
 
 const LoginForm = () => {
   let [user, setUser] = useState({});
   let [usersData, setUsersData] = useState(data);
   let [validUser, setValidUser] = useState(false);
+  let [check, setCheck] = useState(false);
 
   const onFormInputChange = (e) => {
     if (e.target.name == "email") {
@@ -50,10 +51,15 @@ const LoginForm = () => {
           console.log("form submitted");
           e.preventDefault();
           console.log(user);
+          if (!user?.email || !user?.password) {
+            return;
+          }
           setUsersData((currentStatus) => {
             return [...currentStatus, user];
           });
           setUser({});
+          setValidUser(false);
+          setCheck(false);
         }}
       >
         <div>
@@ -90,7 +96,33 @@ const LoginForm = () => {
           />
         </div>
 
-        {validUser && (
+        <div>
+          <label htmlFor="select-gender">Select Gender</label>
+          <select name="gender" id="select-gender">
+            {genders.map((gender) => {
+              return <option value="">{gender}</option>;
+            })}
+          </select>
+        </div>
+        <div>
+          <input
+            type="Checkbox"
+            id="checkbox"
+            checked={check}
+            onChange={() => {
+              setCheck(!check);
+            }}
+          />
+          <label
+            htmlFor="checkbox"
+            style={(check && { color: "black" }) || { color: "gray" }}
+          >
+            {" "}
+            i agree with terms and conditions
+          </label>
+        </div>
+
+        {validUser && check && (
           <div>
             <button id="login-btn" type="submit">
               Login now

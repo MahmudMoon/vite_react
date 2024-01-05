@@ -80,9 +80,6 @@ let data = [
   { email: "abc@g.com", password: "123456" },
 ];
 
-const updateData = (newData) => {
-  console.log("$$$", newData);
-  data = newData;
-};
+let genders = ["select one", "male", "female", "others"];
 
-export { people, data, updateData };
+export { people, data, genders };
