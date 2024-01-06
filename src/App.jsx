@@ -20,6 +20,9 @@ import About from "./project-structure/pages/about";
 import ListingPersons from "./listing-displaying-list/list-person";
 import LoginForm from "./form-control/login-form";
 import FormDataApi from "./form-data/form-data-api";
+import CustomHookExc1 from "./custom-hook/exc1/custom-hook-exc1";
+import FetchMyInfo from "./custom-hook/exc2/data-fetching-ui";
+import NavBarCmp from "./context-api/context-api/nav-bar";
 
 function App() {
   return (
@@ -43,7 +46,10 @@ function App() {
 
       {/* <ListingPersons /> */}
       {/* <LoginForm /> */}
-      <FormDataApi />
+      {/* <FormDataApi /> */}
+      {/* <CustomHookExc1 /> */}
+      {/* <FetchMyInfo /> */}
+      <NavBarCmp />
     </>
   );
 }
