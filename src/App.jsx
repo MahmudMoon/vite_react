@@ -19,6 +19,7 @@ import Home from "./project-structure/pages/home";
 import About from "./project-structure/pages/about";
 import ListingPersons from "./listing-displaying-list/list-person";
 import LoginForm from "./form-control/login-form";
+import FormDataApi from "./form-data/form-data-api";
 
 function App() {
   return (
@@ -41,7 +42,8 @@ function App() {
       <About /> */}
 
       {/* <ListingPersons /> */}
-      <LoginForm />
+      {/* <LoginForm /> */}
+      <FormDataApi />
     </>
   );
 }

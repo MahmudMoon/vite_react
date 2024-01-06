@@ -98,9 +98,15 @@ const LoginForm = () => {
 
         <div>
           <label htmlFor="select-gender">Select Gender</label>
-          <select name="gender" id="select-gender">
+          <select
+            name="gender"
+            id="select-gender"
+            onSelect={() => {
+              console.log("select");
+            }}
+          >
             {genders.map((gender) => {
-              return <option value="">{gender}</option>;
+              return <option>{gender}</option>;
             })}
           </select>
         </div>
