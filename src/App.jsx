@@ -23,6 +23,8 @@ import FormDataApi from "./form-data/form-data-api";
 import CustomHookExc1 from "./custom-hook/exc1/custom-hook-exc1";
 import FetchMyInfo from "./custom-hook/exc2/data-fetching-ui";
 import NavBarCmp from "./context-api/context-api/nav-bar";
+import ReducerDemo from "./use-reducer-state-management-tool/reducer-exc1";
+import PersonList from "./performace-improvement/exc1/PersonList";
 
 function App() {
   return (
@@ -45,11 +47,13 @@ function App() {
       <About /> */}
 
       {/* <ListingPersons /> */}
-      {/* <LoginForm /> */}
+      <LoginForm />
       {/* <FormDataApi /> */}
       {/* <CustomHookExc1 /> */}
       {/* <FetchMyInfo /> */}
-      <NavBarCmp />
+      {/* <NavBarCmp /> */}
+      {/* <ReducerDemo /> */}
+      {/* <PersonList /> */}
     </>
   );
 }
