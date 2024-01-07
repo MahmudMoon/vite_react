@@ -25,6 +25,9 @@ import FetchMyInfo from "./custom-hook/exc2/data-fetching-ui";
 import NavBarCmp from "./context-api/context-api/nav-bar";
 import ReducerDemo from "./use-reducer-state-management-tool/reducer-exc1";
 import PersonList from "./performace-improvement/exc1/PersonList";
+import UseCallBackDemo from "./use-call-back/test-use-call-back";
+import TransitionDemo from "./use-transition/use-transition-demo";
+import LazyLoading from "./lazy-loading/LazyLoadingDemo";
 
 function App() {
   return (
@@ -47,13 +50,16 @@ function App() {
       <About /> */}
 
       {/* <ListingPersons /> */}
-      <LoginForm />
+      {/* <LoginForm /> */}
       {/* <FormDataApi /> */}
       {/* <CustomHookExc1 /> */}
       {/* <FetchMyInfo /> */}
       {/* <NavBarCmp /> */}
       {/* <ReducerDemo /> */}
       {/* <PersonList /> */}
+      {/* <UseCallBackDemo /> */}
+      {/* <TransitionDemo /> */}
+      <LazyLoading />
     </>
   );
 }
